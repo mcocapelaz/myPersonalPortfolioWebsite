@@ -8,32 +8,26 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <div className="header-content">
-          <div className="profile-image">
-            <img src={ProfileImage} alt="Mónica Coca" />
-          </div>
-          <div className="hero-text">
-            <h1 className="hero-title">
-              Hola, soy <span>Mónica Coca</span>
-            </h1>
-            <div className="hero-subtitle">
-              <HeroTitle />
+        <div className="header-main">
+          <div className="header-content">
+            <div className="profile-image">
+              <img src={ProfileImage} alt="Mónica Coca" />
+            </div>
+            <div className="hero-text">
+              <h1 className="hero-title">Hola, soy <span>Mónica Coca</span></h1>
+              <div className="hero-subtitle">
+                <HeroTitle />
+              </div>
             </div>
           </div>
+          <nav className="nav">
+            <ul className="nav-list">
+              <li><a href="#about">Sobre mí</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav className="nav">
-          <ul className="nav-list">
-            <li>
-              <a href="#about">Sobre mí</a>
-            </li>
-            <li>
-              <a href="#projects">Proyectos</a>
-            </li>
-            <li>
-              <a href="#contact">Contacto</a>
-            </li>
-          </ul>
-        </nav>
       </header>
 
       <main>
@@ -41,10 +35,7 @@ function App() {
           <div className="about-content">
             <h2 className="section-title">Sobre mí</h2>
             <p className="section-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              nesciunt, ex magni consequuntur aperiam vel labore similique cum
-              sed iusto possimus quod error earum voluptas voluptatibus culpa?
-              Aspernatur, iste aut.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt, ex magni consequuntur aperiam vel labore similique cum sed iusto possimus quod error earum voluptas voluptatibus culpa? Aspernatur, iste aut.
             </p>
             <div className="skills-grid">
               <div className="skill-tag">HTML</div>
@@ -52,11 +43,6 @@ function App() {
               <div className="skill-tag">JavaScript</div>
               <div className="skill-tag">React</div>
             </div>
-          </div>
-          <div className="section-footer">
-            <a href="#" className="back-to-nav">
-              ↑ Volver arriba
-            </a>
           </div>
         </section>
 
@@ -115,11 +101,6 @@ function App() {
               Descubre cuál es el proyecto que necesitas
             </a>
           </div>
-          <div className="section-footer">
-            <a href="#" className="back-to-nav">
-              ↑ Volver arriba
-            </a>
-          </div>
         </section>
 
         <section id="contact" className="section section-contact">
@@ -128,11 +109,6 @@ function App() {
             <p className="section-text">¿Quieres trabajar conmigo?</p>
             <a href="mailto:mcocapelaz@gmail.com" className="projects-button">
               Escríbeme
-            </a>
-          </div>
-          <div className="section-footer">
-            <a href="#" className="back-to-nav">
-              ↑ Volver arriba
             </a>
           </div>
         </section>
